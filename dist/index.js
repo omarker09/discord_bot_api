@@ -31,8 +31,8 @@ client.on("messageCreate", (message) => __awaiter(void 0, void 0, void 0, functi
     }
     if (message.content === 'banana') {
         // URL of the video to send
-        const videoUrl = 'https://media.tenor.com/u8M7kk5ZXmwAAAPo/banana-cat-crying.mp4'; // Replace with the actual video URL
-        // Send the video URL
+        const videoUrl = 'https://media.tenor.com/u8M7kk5ZXmwAAAPo/banana-cat-crying.mp4';
+        // Send
         message.channel.send(videoUrl);
     }
     if (message.content === "hello") {
@@ -55,16 +55,16 @@ client.on("interactionCreate", (interaction) => __awaiter(void 0, void 0, void 0
         const sumType = (_b = interaction.options.get("sum-type")) === null || _b === void 0 ? void 0 : _b.value;
         const number2 = (_c = interaction.options.get("second-number")) === null || _c === void 0 ? void 0 : _c.value;
         if (sumType === "+") {
-            return interaction.reply(`the resault is ${Math.abs(number1 + number2)}`);
+            return interaction.reply(`the resault is : ${Math.abs(number1 + number2)}`);
         }
         if (sumType === "-") {
-            return interaction.reply(`the resault is ${Math.abs(number1 - number2)}`);
+            return interaction.reply(`the resault is : ${Math.abs(number1 - number2)}`);
         }
         if (sumType === "*") {
-            return interaction.reply(`the resault is ${Math.abs(number1 * number2)}`);
+            return interaction.reply(`the resault is : ${Math.abs(number1 * number2)}`);
         }
         if (sumType === "/") {
-            return interaction.reply(`the resault is ${Math.abs(number1 / number2)}`);
+            return interaction.reply(`the resault is : ${Math.abs(number1 / number2)}`);
         }
         return interaction.reply(`wrong sum only type this (+ , - , * , / )`);
     }

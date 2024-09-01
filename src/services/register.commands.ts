@@ -42,6 +42,14 @@ class RegisterCommands {
         {
             name: "ai",
             description: "use ai now.",
+            options: [
+                {
+                    name: "prompt",
+                    description: "type your propmt",
+                    type: ApplicationCommandOptionType.String,
+                    required: true
+                },
+            ]
         },
         {
             name: "jokes",
